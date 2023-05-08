@@ -19,7 +19,7 @@ import presentation.MyContract;
 public class test {
   public static void generateContract() {
 
-    long chainId = 3;
+    long chainId = 1;
 
     Web3j web3 = Web3j.build(new HttpService("http://localhost:8545"), chainId,new ScheduledThreadPoolExecutor(5));
     //Web3j web3 = Web3j.build(new HttpService("http://localhost:8545"));
@@ -35,7 +35,7 @@ public class test {
 
       //eth_gasPrice, returns the current price per gas in wei.
       EthGasPrice gasPrice = web3.ethGasPrice().send();
-      System.out.println("MA CHAINE ID " + web3.ethChainId().getId());
+
 
       ContractGasProvider contractGasProvider = new DefaultGasProvider();
 
@@ -56,7 +56,7 @@ public class test {
 
       BigInteger minuteNum = BigInteger.valueOf(35);
       BigInteger minutaireNum = BigInteger.valueOf(35);
-      //TransactionReceipt transactionReceipt = contract.setRecord("12.09.1996", "marco", minuteNum, minutaireNum, "test" ).send();
+      TransactionReceipt transactionReceipt = contract.setRecord("12.09.1996", "marco", minuteNum, minutaireNum, "test" ).send();
       //System.out.println(contract.getRecord(BigInteger.valueOf(1)).send());
       System.out.println(contract.getContractAddress());
       //MyContract contract = MyContract.
