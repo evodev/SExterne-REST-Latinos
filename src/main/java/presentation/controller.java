@@ -14,10 +14,8 @@ public class controller {
     return contract.setRecord(anneeNaissance,signature, minuteNum, minutaireNum,designation);
   }
 
-
   @GetMapping("/afficheracte")
   public String afficheracte(@RequestParam int id) throws Exception {
     return contract.getRecord(id);
   }
-
 }
