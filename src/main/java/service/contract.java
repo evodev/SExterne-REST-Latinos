@@ -35,8 +35,7 @@ public class contract {
       e.printStackTrace();
     }
   }
-  public static String setRecord(String pAnneeNaissance, String pSignature, int pMinuteNum,
-      int pMinutaireNum, String pDesignation) throws Exception {
+  public static String setRecord(String pAnneeNaissance, String pSignature, Integer pMinuteNum, Integer pMinutaireNum, String pDesignation) throws Exception {
     BigInteger minuteNum = BigInteger.valueOf(pMinuteNum);
     BigInteger minutaireNum = BigInteger.valueOf(pMinutaireNum);
 
