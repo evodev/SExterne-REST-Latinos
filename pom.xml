@@ -40,11 +40,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.example</groupId>
-      <artifactId>blockchain_connect</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
-    </dependency>
-    <dependency>
       <groupId>com.github.nbbrd.java-io-util</groupId>
       <artifactId>java-io-base</artifactId>
       <version>0.0.20</version>
